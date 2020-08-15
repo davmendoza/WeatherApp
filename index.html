@@ -1,40 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather API</title>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!--Reset CSS-->
+    <link rel="stylesheet" href="reset.css">
+    <!--Font Awesome CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!--Materialize CSS Framework-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Style CSS-->
     <link rel="stylesheet" href="style.css">
 
+    <title>Quarantine Planner</title>
 </head>
+
 <body>
-    <div class="jumbotron" style="margin-bottom:0px; color:white; background-color:beige">
-        <h2 class="text-center" style="font-size:50px; font-weight:600 ;">Weather Forecast</h2>
+    <header>
+        <div class="row">
+            <h1 class="col s12">Quarantine Day Planner</h1>
+        </div>
+
+        <div class="row">
+            <hr class="col s8 push-s2">
+        </div>
+    </header>
+
+    <div id="container">
+        <div class="row">
+            <div class="date weather">
+                <!--In JavaScript, input date using moment.format()-->
+                <!--In Javascript, input weather in San Diego using aJax-->
+                <div class='weather-icon'><img id='wicon' src='' alt='Weather icon'></div>
+            </div>
+            <br>
+            <div id='date'>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12">
+                <h3 id="greeting"></h3>
+                <h4>What Do You Want To Do Today?</h4>
+            </div>
+        </div>
+        <div class="divider"></div>
+
+
+        <!--buttons-->
+        <!--Row 1 Buttons-->
+        <div class="row">
+            <div class="col l6 push-l2 m6 s12">
+                <li>
+                    <button class="button-hover-like button blue lighten-5"><span>Do Something</span>
+                        <i class="fas fa-running"></i></button>
+                </li>
+            </div>
+
+            <div class="col l6 push-l1 m6 s12">
+                <li>
+                    <button class="button-hover-like button blue lighten-5"><span>Do Nothing</span>
+                        <i class="fas fa-video"></i></button>
+                </li>
+            </div>
+        </div>
+
+        <!--Row 2 Buttons-->
+        <div class="row">
+            <div class="col l6 push-l2 m6 s12">
+                <li>
+                    <button class="button-hover-like button blue lighten-5"><span>Get Outside</span><i
+                            class="fas fa-cloud-sun"></i></button>
+                </li>
+            </div>
+
+            <div class="col l6 push-l1 m6 s12">
+                <li>
+                    <button class="button-hover-like button blue lighten-5"><span>Tell Me A Joke!</span><i
+                            class="fas fa-smile-wink"></i></button>
+                </li>
+            </div>
+        </div>
+
+
+
+
     </div>
 
-    <div class="container">
-        <div class="row" style="margin-bottom: 20px;">
-            <h3 class="text-center text-primary">Enter City</h3>
-            <span id="error"></span>
-        </div>
 
-        <div id="s how">
 
-        </div>
 
-        <div class="row form-group form-inline" id="rowDiv">
-            <input type="text" name="city" id="city" class="form-control" placeholder="City Name">
-            <button id ="submitWeather" class="btn btn-primary">Search</button>
-
-        </div>
-
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-
-    <script src="./script.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
