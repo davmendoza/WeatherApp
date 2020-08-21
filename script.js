@@ -1,5 +1,7 @@
 
 var city = "san diego";
+//var searchButton = $('#submitWeather');
+var pastCities = []
 //var querycURL = 'https://api.openweathermap.org/data/2.5/weather?q=' + city + "&units=imperial&appid=7f1dcb44e7dbc65fc6e5097ebb0f6a06";
 //var queryfURL = 'https://api.openweathermap.org/data/2.5/forecast?q=' + city + "&units=imperial&appid=7f1dcb44e7dbc65fc6e5097ebb0f6a06";
 function currentWeather() {
@@ -45,8 +47,18 @@ function forecast() {
 
     });
 };
+function previousSearches () {
+    empty()
+    
+};
 
-// var searchButton = $('#submitWeather');
+function searchCity () {
+    pastCities
+     var citySearchInput = $('#city').val();
+
+};
+
+
 // var citySearchInput = $('#city').val();
 
 //current weather data

@@ -3,12 +3,14 @@
     float: left;
     margin-left: 10px;
     margin-bottom: 20px;
+   
 }
 
-.right-panel{
-    border-left: #969696 solid 10px;
 
-}
+
+
+
+
 
 #rowDiv{
     margin: auto;
@@ -32,11 +34,17 @@ input[type="text"]{
 }
 .stretch-card>.card {
     width: 100%;
-    min-width: 100%
+    min-width: 100%;
+    float: right;
+    
 }
 
 body {
     background-color: #f9f9fa
+}
+
+.col-lg-12 {
+padding-left: 150px;
 }
 
 .flex {
@@ -94,12 +102,14 @@ body {
 }
 
 .card .card-body {
-    padding: 1.88rem 1.81rem
+    padding: 1.88rem 1.81rem;
+    
 }
 
 .card-body {
     flex: 1 1 auto;
-    padding: 1.25rem
+    padding: 1.25rem;
+    
 }
 
 .card-weather .weather-date-location {
